@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.json());
 
 // Create Bio States..
-const slackUserName = "Abeeujah";
+const slackUsername = "Abeeujah";
 const backend = true;
 const age = 22;
 const bio = "A Full Stack Web Developer Who Loves Gaming";
@@ -31,7 +31,7 @@ homeRoute.get('/', (req, res) => {
 
 bioRoute.get('/', (req, res) => {
     return (res.status(200).json({
-        slackUserName,
+        slackUsername,
         backend,
         age,
         bio,
